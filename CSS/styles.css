@@ -22,6 +22,7 @@ body * {
     background-color: rgba(0, 0, 0, 0.93);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .header-content {
@@ -32,7 +33,7 @@ body * {
 }
 
 .container {
-    max-width: 1250px;
+    max-width: 1438px;
     margin: auto;
     z-index: 1;
 }
@@ -51,11 +52,16 @@ body * {
     text-transform: uppercase;
 }
 
-a:link:first-of-type:not(.number){
-    color: white;
+.main {
+    max-width: 1250px;
 }
 
-a:link:not(.number), a:visited {
+a:link.navigation-link, a.navigation-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover.navigation-link, a.navigation-link:visited:hover {
     color: #E3B873;
     text-decoration: none;
 }
@@ -89,32 +95,16 @@ a:link:not(.number), a:visited {
 }
 
 .first-section-button {
-    background-color: #E3B873;
     Width: 207px;
     Height: 51px;
-    color: white;
-    border-radius: 2px;
-    outline: 0;
-    border: 0;
     padding: 19px 42px;
-    text-transform: uppercase;
-    font-family: "Nunito Sans";
-    font-size: 11px;
     margin-right: 20px;
 }
 
 .first-section-button2 {
-    background-color: transparent;
-    Width: 207px;
-    Height: 51px;
-    color: white;
-    border-radius: 2px;
-    outline: 0;
+    background-color: transparent;   
     border: 1px solid white;
     padding: 19px 23px;
-    text-transform: uppercase;
-    font-family: "Nunito Sans";
-    font-size: 11px;
 }
 
 .first-section {
@@ -123,7 +113,6 @@ a:link:not(.number), a:visited {
     height: 707px;
     margin-top: 83px;
     padding-top: 194px;
-    padding-left: 134px;
     position: relative;
     z-index: -1;
 }
@@ -149,12 +138,22 @@ a:link:not(.number), a:visited {
     width: 676px;
 }
 
+.title-project {
+    font-size: 27px;
+    line-height: 37px;
+    position: static;
+}
+
 .title span {
     color: #E3B873
 }
 
+.title span:not(:first-of-type) {
+    font-size: 23px;
+}
+
 .subtitle {
-    position: absolute;
+    position: static;
     font-family: "Nunito Sans";
     font-size: 22px;
     line-height: 36px;
@@ -166,10 +165,260 @@ a:link:not(.number), a:visited {
     display: flex;
     align-items: baseline;
     max-width: 540px;
-    padding-top: 149px;
 }
+
+/* секция 2 */
 
 .second-section {
     background-color: #131313;
     height: 1074px;
+    padding-top: 107px;
+    padding-bottom: -298px;
+    position: static;
+    z-index: 1;
+}
+
+.projects-navigation{
+    padding-left: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    list-style: none;
+    margin-bottom: 52px;
+}
+
+.project-navigation__item {
+    margin-right: 45px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "Yeseva One";
+    color:rgba(265, 265, 265, 0.7)
+}
+
+a:link.project-nav-link, a.project-nav-link:visited {
+    color:rgba(265, 265, 265, 0.7);
+    text-decoration: none;
+}
+
+a:hover.project-nav-link, a.project-nav-link:visited:hover {
+    color:#E3B873;
+    text-decoration: underline;
+    text-underline-offset: 6.8px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.completed-projects {
+    width: 500px;
+    height: 482px;
+    position: relative;
+}
+
+.subtitle-project {
+    font-size: 14px;
+    line-height: 22px;
+    position: static;
+}
+
+.project-description {
+    width: 500px;
+    padding-top: 42px;
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+}
+
+div.project-description div {
+    height: 99px;
+    max-width: 180px;
+}
+
+.project-description-title {
+    font-size: 18px;
+    line-height: 25px;
+    color:#E3B873;
+}
+
+.image-navigation {
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+}
+
+.pointer{
+    background: url("../images/Group-left.svg");
+    background-size: cover;
+    width: 44px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.right{
+    transform: rotate(180deg);
+    margin-left: 18px;
+}
+
+.rectangle {
+    margin-left: 9px;
+    margin-right: 9px;
+    background: url("../Images/Rectangle 7.3.svg") no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.rectangle:hover {
+    background: url("../Images/Rectangle 7.4.svg")
+}
+
+.image-navigation a:last-child{
+    padding-left: 29px;
+}
+
+.image-navigation a:hover:nth-child(-3n+3) {
+    image-rendering: white;
+}
+
+.project-image {
+    width: 679px;
+    height: 482px;
+    background-image: url("../Images/image 2.1.jpg");
+}
+
+/* третья секция */
+
+.third-section {
+    margin-top: -298px;
+    height: 1740px;
+}
+
+.second-section-title {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: auto;
+}
+
+.control-image {
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    position: static;
+    margin-bottom: 15px;
+}
+
+div.control-image img {
+    margin: 4px;
+}
+
+.mask-group {
+    background-image: url("../Images/Step2/MaskGroup.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    width: 817px;
+    height: 434px;
+    margin: auto;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mask-group div:only-child {
+    background-image: url("../images/Step2/Group 8.svg");
+    background-size: cover;
+    position: absolute;
+    border-radius: 120px;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+
+hr {
+    height: 2px;
+    width: 55px;
+    margin: auto;
+    margin-top: 62.5px;
+    color: #E3B873;
+}
+
+.third-section-text {
+    font-family: "Nunito Sans";
+    color: #363636
+}
+
+hr + p.third-section-text {
+    width: 681px;
+    height: 131px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.measurement {
+    width: 800px;
+    height: 173px;
+    margin:auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input {
+    position: relative;
+    display: block;
+    padding-left: 130px;
+    height: 37px;
+    width: 231px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    border-bottom: solid 1px rgba(54, 54, 54, 0.3);
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 23px;
+    
+}
+
+.label::after {
+    content: 'What is your name:' attr(data-domain);
+    position: relative;
+    bottom: 30px;
+    left: 1px;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 23px;
+    display: block;
+    color: #363636;
+}
+
+.label:last-of-type::after {
+    content: 'Your phone number:' attr(data-domain);
+}
+
+.input-label {
+    position: relative;
+    bottom: -6px;
+    font-family: "Nunito Sans";
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(54, 54, 54, 0.5)
 }
