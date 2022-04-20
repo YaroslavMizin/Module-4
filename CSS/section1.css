@@ -56,13 +56,14 @@
     margin-left: 20px;
 }
 
-.title {
+.first-section div p:first-child {
     font-size: 40px;
     line-height: 53px;
     width: 676px;
+    color: #E3B873;
 }
 
-.title span {
+.first-section span {
     color: white;
 }
 

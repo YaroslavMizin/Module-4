@@ -28,25 +28,39 @@ body * {
     max-width: 1250px;
 }
 
-.nunito-1 {
+.text {
     font-family: "Nunito Sans";
     color: white;
 }
 
-.yeseva-1 {
+.title {
     font-family: "Yeseva One";
-    color: #E3B873;
-    text-transform: uppercase;
-}
-
-.yeseva-2 {
-    font-family: "Yeseva One";
-    color: #181818;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 28px;
-    text-align: center;
+}
+
+.black {
+    color: #181818;
     margin: auto;
+    text-align: center;
+}
+
+.white {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.gold {
+    color: #E3B873;
+    font-size: 27px;
+    line-height: 37px;
+}
+
+.small {
+    font-size: 18px;
+    line-height: 24.95px;
 }
 
 .button {
@@ -61,6 +75,121 @@ body * {
     text-transform: uppercase;
     font-family: "Nunito Sans";
     font-size: 11px;
+}
+
+.label {
+    position: relative;
+    display: block;
+    width: 231px;
+    font-family: "Nunito Sans";
+    font-size: 13px;
+    line-height: 22.3px;
+    color: rgba(54, 54, 54, 0.5)
+}
+
+.label::after {
+    content: 'What is your name:';
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+    display: block;
+}
+
+.input {
+    position: absolute;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+    padding: 0px 0px 8px 127px;
+    width: 231px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: solid 1px rgba(54, 54, 54, 0.3);
+}
+
+.input-light {
+    color: white;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+}
+
+.phone-input {
+    padding-left: 132px;
+}
+
+.email-input {
+    padding-left: 74px;
+}
+
+.question-input {
+    padding-left: 102px;
+    width: 100%;
+}
+
+.phone::after {
+    content: "Your phone number:"
+}
+
+.question::after {
+    content: "I want to know:";
+}
+
+.email::after {
+    content: "Your email:";
+}
+
+.light {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.light::after {
+    color: white;
+}
+
+.logo-3 img {
+    display: block;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-top: 13px;
+}
+
+/* чекбокс */
+
+.custom-checkbox>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox>span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.custom-checkbox>span::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E3B873;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.custom-checkbox>input:checked+span::before {
+    border-color: #E3B873;
+    background-color: #E3B873;
+    background-image: url("../Images/Vector.svg");
+}
+
+label .text {
+    font-size: 14px;
 }
 
 /* секция 1 */
@@ -104,11 +233,15 @@ body * {
     height: 910px;
 }
 
+/* секция 4 */
+
 .fourth-section {
     height: 1770px;
     margin-top: 95px;
     padding-bottom: -112.53px;
 }
+
+/* секция 5 */
 
 .fifth-section {
     margin-top: -112.53px;
@@ -130,14 +263,33 @@ body * {
     z-index: -1;
 }
 
+/* секция 6 */
+
 .sixth-section {
     height: 1107px;
-    z-index: 1;
+    position: relative;
+    background-image: url("../Images/Step3/Group-left.jpg"), url("../Images/Step3/Group-right.jpg");
+    background-repeat: repeat-x, repeat-x;
+    background-position: bottom left, bottom right;
+    background-size: auto, auto;
+    z-index: -1;
 }
 
+.sixth-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+}
+
+/* секция 7 */
+
 .seventh-section {
-    margin-top: -112.53px;
-    height: 864px;
+    height: 953px;
     position: relative;
     background-image: url("../Images/Step3/image 7.2.jpg");
     background-size: cover;

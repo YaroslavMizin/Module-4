@@ -10,6 +10,10 @@
     line-height: 29.5px;
 }
 
+.sixth-section p:first-child {
+    margin-top: 145px;
+}
+
 .clients {
     display: flex;
     flex-direction: row;

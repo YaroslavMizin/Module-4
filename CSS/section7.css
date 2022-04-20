@@ -1,4 +1,4 @@
-.questions-application {
+.seventh-section form {
     position: absolute;
     width: 883px;
     height: 445.32px;
@@ -10,42 +10,71 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 2;
 }
 
-.questions-application p {
-    margin: 0; 
+.seventh-section .gold {
+    margin: 0 auto 0 auto;
+    padding-top: 274.67px; 
+    position: relative;
+    width: 579px;
+    font-size: 20px;
+    line-height: 27.72px;
+    text-align: center;
 }
 
 .questions-application-name-and-phone {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: stretch;
+    height: auto;
 }
 
-.questions-application .input-2 {
-    margin-top: 0px;
-}
-
-.questions-application div .input-2 {
-    width: 231px;
-    margin-top: 0px;
-}
-
-.questions-application-name-and-phone span {
-    bottom: -8px;
-    margin-bottom: -8px;
-}
-
-.checkbox-label {
+.seventh-section .custom-checkbox {
     margin: 38px auto;
     color: white;
 }
 
-.questions-application .label-2-2::after {
-    content: 'I want to know:' attr(data-domain)
+.seventh-section form button {
+    margin: 0px auto;
 }
 
-.questions-application button {
-    margin: 0px auto;
+.contacts-logo {
+    margin: 26px auto 43px auto;
+    text-align: center;
+    z-index: 2;
+}
+
+form .question {
+    width: 100%;
+}
+
+form .white {
+    margin: 0;
+}
+
+iframe {
+    display: block;
+    width: 926px;
+    height:476px;
+    border: 0;
+}
+
+.iframe-container {
+    display: block;
+    width: 926px;
+    height:476px;
+    position: relative;
+    margin: auto;    
+}
+
+footer {
+    background-color: black;
+    height: 133px;
+    align-items: center;
+}
+
+footer .header-content {
+    height: 133px;
 }
