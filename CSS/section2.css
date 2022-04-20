@@ -1,0 +1,122 @@
+/* шапка */
+
+.projects-navigation{
+    padding-left: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    list-style: none;
+    margin-bottom: 52px;
+}
+
+.projects-navigation a:link, .projects-navigation a:visited {
+    margin-right: 60px;
+    color:rgba(265, 265, 265, 0.7);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "Yeseva One";
+}
+
+.projects-navigation a:hover {
+    color:#E3B873;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/* левый блок */
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.completed-projects {
+    width: 500px;
+    height: 482px;
+    position: relative;
+}
+
+.completed-projects p:first-child {
+    font-size: 27px;
+    line-height: 37px;
+    position: static;
+    margin-top: 0px;
+}
+
+.completed-projects .nunito-1 {
+    font-size: 13px;
+    line-height: 26px;
+    width: 442px;
+    margin-top: 0px;
+}
+
+.project-data {
+    width: 500px;
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+    margin-top: 42px;
+}
+
+div.project-data div {
+    height: 110px;
+    max-width: 180px;
+}
+
+.project-data p:first-child {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 9px;
+}
+
+/* кнопки */
+
+.project-data-switch {
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+}
+
+.pointer{
+    background: url("../images/Group-left.svg");
+    background-size: cover;
+    width: 44px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.right{
+    transform: rotate(180deg);
+    margin-left: 18px;
+}
+
+.rectangle {
+    margin-left: 9px;
+    margin-right: 9px;
+    background: url("../images/Rectangle 7.3.svg") no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.rectangle:hover {
+    background: url("../images/Rectangle 7.4.svg")
+}
+
+/* изображение */
+
+.project-image {
+    width: 679px;
+    height: 482px;
+    background-image: url("../images/image 2.1.jpg");
+}

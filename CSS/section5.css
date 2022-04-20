@@ -1,0 +1,59 @@
+.fifth-section-content {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.fifth-section aside {
+    width: 488px;
+    height: 100%;
+}
+
+.fifth-section aside p {
+    padding-top: 137px;
+    padding-bottom: 47px;
+    font-size: 27px;
+    line-height: 37.5px;
+}
+
+.fifth-section-navigation {
+    margin-left: -38px;
+}
+
+.fifth-section-navigation li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.fifth-section-navigation a:link,
+.fifth-section-navigation a:visited {
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    line-height: 38px;
+    text-decoration: none;
+}
+
+.fifth-section-navigation a:hover {
+    color: #E3B873;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.gallery {
+    top: -41.16px;
+    position: relative;
+    height: 946.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.gallery-2 {
+    top: -112.53px;
+    height: 936.88px;
+    margin-left: 43px;
+}

@@ -1,0 +1,51 @@
+.questions-application {
+    position: absolute;
+    width: 883px;
+    height: 445.32px;
+    background-color: black;
+    margin-top: -222.66px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 34.4px 181.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.questions-application p {
+    margin: 0; 
+}
+
+.questions-application-name-and-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.questions-application .input-2 {
+    margin-top: 0px;
+}
+
+.questions-application div .input-2 {
+    width: 231px;
+    margin-top: 0px;
+}
+
+.questions-application-name-and-phone span {
+    bottom: -8px;
+    margin-bottom: -8px;
+}
+
+.checkbox-label {
+    margin: 38px auto;
+    color: white;
+}
+
+.questions-application .label-2-2::after {
+    content: 'I want to know:' attr(data-domain)
+}
+
+.questions-application button {
+    margin: 0px auto;
+}

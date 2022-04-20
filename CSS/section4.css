@@ -1,0 +1,210 @@
+.fourth-section-title {
+    margin-top: 145px;
+}
+
+.fourth-section-logo img {
+    display: block;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-top: 13px;
+}
+
+.types-of-repair {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 21px;
+    position: static;
+}
+
+.type-of-repair {
+    padding: 15px;
+    align-content: center;
+}
+
+.types-of-repair div div {
+    display: block;
+    position: absolute;
+    width: 330px;
+    height: 296px;
+    background-color: white;
+    margin-top: -131px;
+    margin-left: 31px;
+    color: #363636;
+    font-family: "Nunito-Sans";
+    line-height: 18px;
+}
+
+.types-of-repair-subtitle {
+    position: absolute;
+    z-index: 2;
+    color: #363636;
+    font-family: "Yeseva One";
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 34px;
+}
+
+.types-of-repair ul {
+    position: absolute;
+    z-index: 2;
+    color: #959595;
+    font-family: "Nunito Sans";
+    font-size: 13px;
+    line-height: 27px;
+    margin-top: 25px;
+    left: 14px;
+}
+
+.fourth-section-button {
+    width: 228px;
+    height: 54px;
+    font-family: "Yeseva One";
+    font-size: 18px;
+    line-height: 25px;
+    padding: 17px 17px;
+    position: absolute;
+    bottom: 0;
+}
+
+li span {
+    position: relative;
+    left: -10px;
+}
+
+/* второй блок */
+
+.fourth-section-background {
+    margin-top: 200px;
+    width:803px;
+    height: 598px;
+    background-image: url("../Images/step3/image 6.1.jpg");
+    background-size: cover;
+    position: absolute;
+}
+
+.fourth-section-block2 {
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fourth-section-block2-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 568px;
+    width: 703px;
+    padding-top: 70px;
+    padding-left: 219px;
+    padding-right: 131px;
+}
+
+.fourth-section-block2-left div {
+    width: 412px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Nunito Sans";
+    line-height: 19px;
+    font-size: 14px;
+    color:#363636;
+}
+
+.fourth-section-block2-right {
+    position: relative;
+    width: 509px;
+    height: 506px;
+    background-color: #131313;
+    margin-top: 70px;
+    padding: 27px 49px;
+}
+
+.fourth-section-block2-right p {
+    line-height: 26px;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.input-2 {
+    width: 100%;
+    background: transparent;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 23px;
+    color: white;
+    margin-top: 15px;
+}
+
+.label-2::after {
+    content: 'What is your name:';
+    position: relative;
+    bottom: 30px;
+    left: 1px;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 23px;
+    display: block;
+    color: white;
+}
+
+.label-2-1::after {
+    content: 'Your phone number:' attr(data-domain);
+}
+
+.label-2-2::after {
+    content: 'Your email:' attr(data-domain);
+}
+
+.input-label-2 {
+    position: relative;
+    bottom: -6px;
+    font-family: "Nunito Sans";
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fourth-section-block2-right label {
+    color: white;
+}
+
+.fourth-section-block2-right label span {
+    bottom: -20px;
+}
+
+.fourth-section-block2-right button {
+    width: 213px;
+    line-height: 22px;
+    padding: 18px 22px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 27px;
+    margin-right: 49px;
+}
+
+.fourth-section-block-down {
+    width: 344px;
+    height: 130px;
+    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 760px;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+}
